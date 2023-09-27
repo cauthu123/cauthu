@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Profile</title>
+</head>
+<body>
+    <div class="profile">
+        <img id="avatar" src="./static/img/default_avatar.png" alt="Avatar">
+        <div class="profile-box">
+            <label style="font-weight: bold;">Họ và tên</label>
+            <h4 id="fullName"></h4>
+        </div>
+        <div class="profile-box">
+            <label style="font-weight: bold;">Vị trí công việc</label>
+            <p id="jobTitle"></p>
+        </div>
+        <div class="profile-box">
+            <label style="font-weight: bold;">Company name</label>
+            <p id="companyName"></p>
+        </div>
+        <div class="profile-box">
+            <label style="font-weight: bold;">Phone</label>
+            <p id="phone"></p>
+        </div>
+        <div class="profile-box">
+            <label style="font-weight: bold;">Personal Mail</label>
+            <p id="personalMail"></p>
+        </div>
+        <div class="profile-box">
+            <label style="font-weight: bold;">Work Mail</label>
+            <p id="workMail"></p>
+        </div>
+        <button id="editButton">Cập nhật</button>
+    </div>
+
+    <div class="update-form" style="display: none;">
+        <h2>Cập nhật thông tin</h2>
+        <input type="file" id="newImage" accept="image/*">
+        <input type="text" id="newFullName" placeholder="Họ và Tên">
+        <input type="text" id="newJobTitle" placeholder="Vị trí công việc">
+        <input type="text" id="newCompanyName" placeholder="Company name">
+        <input type="text" id="newPhone" placeholder="Phone">
+        <input type="text" id="newPersonalMail" placeholder="Personal Mail">
+        <input type="text" id="newWorkMail" placeholder="Work Mail">
+        <button id="updateButton">Lưu</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
